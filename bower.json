@@ -1,6 +1,7 @@
 {
   "name": "famchat",
   "dependencies": {
-    "materialize": "0.97.7"
+    "materialize": "0.97.7",
+    "jquery": "^3.2.1"
   }
 }
