@@ -3,7 +3,10 @@ import Ember from 'ember';
 export default Ember.Route.extend({
   actions: {
     doRegister() {
-      alert('Register')
+      this.get('currentModel').save()
+        .then(() => {
+          this.transitionTo('auth.login');
+        });
     }
   },
   model() {
